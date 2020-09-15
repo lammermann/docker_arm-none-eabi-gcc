@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag arm-none-eabi-gcc:$(date +%Y-%m-%d) --tag arm-none-eabi-gcc:latest
     - name: Push the latest Docker image
-      run: docker push lammermann/arm-none-eabi-gcc
+      run: docker push lammermann/arm-none-eabi-gcc:latest
